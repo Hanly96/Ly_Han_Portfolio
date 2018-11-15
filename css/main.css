@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.hidden
+{
+    display: none;
+}
+
+body {
+    
+    font-family: 'heading',Helvetica, sans-serif;
+    font-size: 11pt;
+    text-align: center;
+}
+
+@font-face{
+    font-family:heading;
+    src:url(../fonts/ObelixProBIt-cyr.ttf);
+}
+
+@font-face{
+    font-family:nav;
+    src:url(../fonts/Pecita-webfont.ttf);
+}
+
+
+#home{
+    background-image: url(../images/banner.gif);
+    background-repeat: no-repeat;
+    width: 1024px;
+    height: 600px;
+}
+
+#main-menu{
+    position:-webkit-sticky;
+    position:sticky;
+    font-family: nav;
+    font-size: 20pt;
+    margin-top: 40px;
+}
+#menu li a{
+    transition:0.8s ease-in-out;
+    color:#3d3d3b;
+    font-weight:bold;
+}
+#menu li a:hover{
+    color: #000;
+    transition:0.8s ease-in-out;
+}
