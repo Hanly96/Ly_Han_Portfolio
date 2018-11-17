@@ -10,8 +10,9 @@
 </head>
 
 <body>
-<div id="home">
-        <header>
+<!--Navigation goes here-->  
+<div class="row">
+        <header id="nav">
 
                 <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
                   <button class="menu-icon columns" type="button" data-toggle="main-menu"></button>
@@ -23,25 +24,79 @@
                   <ul id="menu" class="menu vertical medium-horizontal text-center expanded columns small-12 large-7">
                     <li class="columns small-12"><a href="#home">Home</a></li>
                     <li class="columns small-12"><a href="#about">About</a></li>
-                    <li class="columns small-12"><a href="#work">Work</a></li>
-                    <li class="columns small-12"><a href="#contactus">Contact</a></li>
+                    <li class="columns small-12"><a href="#project">Projects</a></li>
+                    <li class="columns small-12"><a href="#contact">Contact</a></li>
                   </ul>  
                 </nav>
-
-                <div class="row">
-                <img class="small-12 large-12" src="images/banner.gif">
-                </div>
-
-                <div id="text_banner" class="row">
-                  <p class="large-12 small-12 ">Hi, I am mystery.</p>
-                  <p class="large-12 small-12">Do you want to discover?</p>
-                </div>
-                <div id="click-me">
-                  <a href="#">Click me</a>
-                </div>
-              
         </header>
 </div>
+
+<!--#Home goes here-->
+<div id="home">      
+        <section class="row">
+          <img class="small-12 large-12" width="1024" height="600" src="images/banner.gif">
+        </section>
+
+        <section id="text_banner" class="row">
+          <p class="columns large-12 small-12 ">Hi, I am mystery.</p>
+          <p class="columns large-12 small-12">Do you want to discover?</p>
+        </section>
+                
+        <section id="click-me">
+          <a href="#about">Click me</a>
+        </section>
+                
+        
+</div>
+
+<!--#About goes here-->
+<div class="row" id="about">
+  <section class="wow bounceInUp">
+      <object class="columns large-12 small-12" type="image/svg+xml" id="heading-about" data="images/heading-about.svg" width="720"
+      height="65"></object>
+  </section>
+
+</div>
+
+<!--#Work goes here-->
+<div id="project">
+  <section class="wow bounceInUp">
+      <object class="columns large-12 small-12" type="image/svg+xml" id="heading-project" data="images/heading-project.svg" width="720"
+      height="65"></object>
+  </section>
+</div>
+
+<div class="row">
+  <section id="brand-button" class="columns large-3 medium-3 small-12">
+          <a href="#branding">Branding</a>
+  </section>
+  <section id="web-button" class="columns large-3 medium-3 small-12">
+      <a href="#website">Website</a>
+  </section>
+  <section id="photo-button" class="columns large-3 medium-3 small-12">
+      <a href="#photo">Photography</a>
+  </section>
+  <section id="video-button" class="columns large-3 medium-3 small-12">
+      <a href="#video">Video</a>
+  </section>
+</div>
+
+<!--*Branding goes here-->
+<div id="branding">
+  <section class="row">
+    <a class="columns large-4 medium-4 small-12" href="havo.html"><img width="300" height="300" src="images/logo_01.png"></a>
+    <a class="columns large-4 medium-4 small-12" href="havo.html"><img width="300" height="300" src="images/logo_02.png"></a>
+    <a class="columns large-4 medium-4 small-12" href="havo.html"><img width="300" height="300" src="images/logo_03.png"></a>
+  </section>
+  <section class="row">
+    <a class="columns large-4 medium-4 small-12" href="havo.html"><img width="300" height="300" src="images/logo_04.png"></a>
+    <a class="columns large-4 medium-4 small-12" href="havo.html"><img width="300" height="300" src="images/logo_05.png"></a>
+    <a class="columns large-4 medium-4 small-12" href="havo.html"><img width="300" height="300" src="images/logo_06.png"></a>
+  </section>
+</div>
+
+<!--*Website goes here-->
+
     <script src="js/wow.min.js"></script>
     <script>
     new WOW().init();

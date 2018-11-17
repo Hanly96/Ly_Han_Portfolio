@@ -6,10 +6,10 @@
     display: none;
 }
 
-body {
+body p{
     
-    font-family: 'heading',Helvetica, sans-serif;
-    font-size: 11pt;
+    font-family: Helvetica, sans-serif;
+    font-size: 15pt;
     text-align: center;
 }
 
@@ -22,7 +22,6 @@ body {
     font-family:pecita;
     src:url(../fonts/Pecita-webfont.ttf);
 }
-
 
 
 
@@ -46,8 +45,7 @@ body {
 #text_banner{
     position: absolute;
     top: 50%;
-    left: 25%;
-    
+    left: 10%;    
 }
 
 #text_banner p{
@@ -78,4 +76,105 @@ body {
 
 #click-me:hover{
     background-color: #d1dcc0;
+}
+
+
+/*About*/
+/*#about{
+    background-color: #f9f6f1;
+    
+}*/
+
+#heading-about{
+    margin-top:40px;
+    margin-bottom: 40px;
+}
+
+
+/*Project*/
+#brand-button {
+    padding-top: 5px;
+    font-family: pecita;
+    display: block;
+    width: 200px;
+    height: 55px;
+    color: #000;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: all .5s ease-in-out;
+    background-color: #f7ce87;
+    float: right;
+    font-size: 25pt;
+    text-align: center;
+    float: left;
+    margin-right: 65px;
+}
+
+#brand-button:hover{
+    background-color: #fbe9c9;
+}
+
+#web-button {
+    padding-top: 5px;
+    font-family: pecita;
+    display: block;
+    width: 200px;
+    height: 55px;
+    color: #000;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: all .5s ease-in-out;
+    background-color: #97cbd6;
+    float: right;
+    font-size: 25pt;
+    text-align: center;
+    float: left;
+    margin-right: 65px;
+}
+
+#web-button:hover{
+    background-color: #bde1e5;
+}
+
+#photo-button {
+    padding-top: 8px;
+    font-family: pecita;
+    display: block;
+    width: 200px;
+    height: 55px;
+    color: #000;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: all .5s ease-in-out;
+    background-color: #f6a482;
+    float: right;
+    font-size: 22pt;
+    text-align: center;
+    float: left;
+    margin-right: 65px;
+}
+
+#photo-button:hover{
+    background-color: #f7c3b0;
+}
+
+#video-button {
+    padding-top: 5px;
+    font-family: pecita;
+    display: block;
+    width: 200px;
+    height: 55px;
+    color: #000;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: all .5s ease-in-out;
+    background-color: #77a9c1;
+    float: right;
+    font-size: 25pt;
+    text-align: center;
+    float: right;
+}
+
+#video-button:hover{
+    background-color: #a6c5d1;
 }
