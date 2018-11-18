@@ -23,6 +23,10 @@ body p{
     src:url(../fonts/Pecita-webfont.ttf);
 }
 
+@font-face{
+    font-family:oliver;
+    src:url(../fonts/oliver\ quin\ dafont.ttf);
+}
 
 
 #main-menu{
@@ -80,10 +84,11 @@ body p{
 
 
 /*About*/
-/*#about{
-    background-color: #f9f6f1;
+
+#about{
+    background-color: #f7f2ed;
     
-}*/
+}
 
 #heading-about{
     margin-top:40px;
@@ -92,6 +97,10 @@ body p{
 
 
 /*Project*/
+#project{
+    background-color: #f7f2ed;
+}
+
 #brand-button {
     padding-top: 5px;
     font-family: pecita;
@@ -107,7 +116,7 @@ body p{
     font-size: 25pt;
     text-align: center;
     float: left;
-    margin-right: 65px;
+    margin-right: 85px;
 }
 
 #brand-button:hover{
@@ -129,7 +138,7 @@ body p{
     font-size: 25pt;
     text-align: center;
     float: left;
-    margin-right: 65px;
+    margin-right: 85px;
 }
 
 #web-button:hover{
@@ -151,7 +160,7 @@ body p{
     font-size: 22pt;
     text-align: center;
     float: left;
-    margin-right: 65px;
+    margin-right: 85px;
 }
 
 #photo-button:hover{
@@ -177,4 +186,38 @@ body p{
 
 #video-button:hover{
     background-color: #a6c5d1;
+}
+
+
+
+
+/*Ha Vo Page*/
+/*#havo{
+    background-color: #f9f6f1;
+}*/
+
+#heading-havo 
+{
+    margin-top: 40px;
+}
+
+#discription p {
+    margin-top: 30px;
+    text-align: justify;
+}
+
+#color-typo{
+    margin-top: 30px; 
+    margin-right: 60px;
+}
+
+#color img{
+    padding-bottom: 30px;
+    padding-top: 40px; ;
+    margin-right: 20px;
+}
+
+#typo p{
+    font-family: oliver;
+    font-size: 40pt;
 }
