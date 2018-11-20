@@ -13,6 +13,7 @@ body p{
     text-align: center;
 }
 
+
 @font-face{
     font-family:heading;
     src:url(../fonts/ObelixProBIt-cyr.ttf);
@@ -95,9 +96,17 @@ body p{
     margin-bottom: 40px;
 }
 
+#textabout p{
+    text-align: justify;
+}
+
 
 /*Project*/
 #project{
+    background-color: #f7f2ed;
+}
+
+#branding{
     background-color: #f7f2ed;
 }
 
@@ -122,6 +131,7 @@ body p{
 #brand-button:hover{
     background-color: #fbe9c9;
 }
+
 
 #web-button {
     padding-top: 5px;
@@ -188,7 +198,14 @@ body p{
     background-color: #a6c5d1;
 }
 
+.brand-thumb{
+    transition: all .5s ease-in-out;
+}
 
+.brand-thumb:hover{
+    opacity: 0.5;
+    filter: alpha(Opacity=80);
+}
 
 
 /*Ha Vo Page*/
