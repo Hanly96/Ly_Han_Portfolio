@@ -104,8 +104,19 @@ body p{
 /*Project*/
 #project{
     background-color: #f7f2ed;
+    padding-top: 150px;
 }
 
+#header-project{
+    margin-bottom: 70px;
+}
+
+#project-button{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+    /*Branding*/
 #branding{
     background-color: #f7f2ed;
 }
@@ -203,9 +214,20 @@ body p{
 }
 
 .brand-thumb:hover{
-    opacity: 0.5;
-    filter: alpha(Opacity=80);
+    opacity: 0.6;
+    filter: alpha(Opacity=100);
 }
+
+    /*Website*/
+#website{
+    padding-top: 150px;
+    background-color: #f7f2ed;
+}
+
+#website img{
+    margin-bottom: 30px;
+}
+
 
 
 /*Ha Vo Page*/
