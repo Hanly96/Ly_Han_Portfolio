@@ -29,6 +29,11 @@ body p{
     src:url(../fonts/oliver\ quin\ dafont.ttf);
 }
 
+@font-face{
+    font-family:studio;
+    src:url(../fonts/Studio-Gothic-Alternate-ExtraLight-trial.ttf)
+}
+
 
 #main-menu{
     position:-webkit-sticky;
@@ -262,5 +267,16 @@ body p{
 
 #typo p{
     font-family: oliver;
+    font-size: 40pt;
+}
+
+/* Genki Page */
+
+#text-brand-genki p{
+    text-align: justify;
+}
+
+.heading-genki p{
+    font-family: studio;
     font-size: 40pt;
 }
