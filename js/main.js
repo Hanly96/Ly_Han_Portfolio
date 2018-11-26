@@ -1,13 +1,33 @@
-var brand = document.getElementById("branding");
+
+var branding = document.getElementById("branding");
+    website  = document.getElementById("website");
+    photo    = document.getElementById("photo");
+
 
 
 
 
 function hideShowBranding (){
-    if (brand.style.display === "none") {
-        brand.style.display = "block";
+    if (branding.style.display === "none") {
+        branding.style.display =   "block";
     } else {
-        brand.style.display = "none";
+        branding.style.display = "none";
     }
 
+};
+
+function hideShowWebsite (){
+    if (website.style.display === "none") {
+        website.style.display = "block";
+    } else {
+        website.style.display = "none";
+    }
+};
+
+function hideShowPhoto (){
+    if (photo.style.display === "none") {
+        photo.style.display =   "block";
+    } else {
+        photo.style.display = "none";
+    }
 }

@@ -119,6 +119,7 @@ body p{
     /*Branding*/
 #branding{
     background-color: #f7f2ed;
+    display: none;
 }
 
 #brand-button {
@@ -220,20 +221,23 @@ body p{
 
     /*Website*/
 #website{
-    padding-top: 150px;
-    background-color: #f7f2ed;
+    padding-top: 100px;
+    background-color: #f6ebd9;
+    display: none;
 }
 
 #website img{
     margin-bottom: 30px;
 }
 
+    /* Photo */
+#photo{
+    background-color: #f6e2c0;
+}
 
 
 /*Ha Vo Page*/
-/*#havo{
-    background-color: #f9f6f1;
-}*/
+
 
 #heading-havo 
 {
