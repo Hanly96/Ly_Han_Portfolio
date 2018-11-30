@@ -105,6 +105,9 @@ body p{
     text-align: justify;
 }
 
+#interests p{
+    text-align: center;
+}
 
 /*Project*/
 #project{
@@ -279,4 +282,18 @@ body p{
 .heading-genki p{
     font-family: studio;
     font-size: 40pt;
+    text-align: left;
+}
+
+.heading-genki {
+    margin-top: 15%;
+}
+
+#text-typo-genki p{
+    font-family: studio;
+    font-size: 40pt;
+}
+
+.typo-genki-name{
+    font-weight: bold;
 }
