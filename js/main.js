@@ -2,6 +2,7 @@
 var branding = document.getElementById("branding");
     website  = document.getElementById("website");
     photo    = document.getElementById("photo");
+    videoProject    = document.getElementById("video-project");
 
 
 
@@ -30,4 +31,12 @@ function hideShowPhoto (){
     } else {
         photo.style.display = "none";
     }
-}
+};
+
+function hideShowVideo (){
+    if (videoProject.style.display === "none") {
+        videoProject.style.display =   "block";
+    } else {
+        videoProject.style.display = "none";
+    }
+};

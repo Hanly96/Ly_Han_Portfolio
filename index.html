@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/foundation.css">
 <link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/hivideo.css" rel="stylesheet" type="text/css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" type="text/css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
 <title>Han Ly</title>
@@ -89,23 +90,23 @@
 <!--#Project goes here-->
 <div id="project">
   <section class="wow bounceInUp" id="header-project">
-      <object class="columns large-12 small-12" type="image/svg+xml" id="heading-project" data="images/heading-project.svg" width="720"
+      <object class="columns large-12 medium-12 small-12" type="image/svg+xml" id="heading-project" data="images/heading-project.svg" width="720"
       height="65"></object>
   </section>
 
 <div>
   <div class="row" id="project-button">
-    <section id="brand-button" class="columns large-3 medium-12 small-12">
+    <section id="brand-button" class="columns text-center small-12 medium-3 large-3">
             <a href="#branding" onclick="hideShowBranding()">Branding</a>
     </section>
-    <section id="web-button" class="columns large-3 medium-12 small-12">
+    <section id="web-button" class="columns text-center small-12 medium-3 large-3">
         <a href="#website" onclick="hideShowWebsite()">Website</a>
     </section>
-    <section id="photo-button" class="columns large-3 medium-12 small-12">
-        <a href="#photo" onclick="hideShowWebsite()">Photography</a>
+    <section id="photo-button" class="columns text-center small-12 medium-3 large-3">
+        <a href="#photo" onclick="hideShowPhoto()">Photography</a>
     </section>
-    <section id="video-button" class="columns large-3 medium-3 small-12">
-        <a href="#video">Video</a>
+    <section id="video-button" class="columns text-center small-12 medium-3 large-3">
+        <a href="#video-project" onclick="hideShowVideo()">Video</a>
     </section>
   </div>
 </div>
@@ -122,7 +123,7 @@
       <a class="columns large-4 medium-4 small-12" href="genki.html"><img width="300" height="300" src="images/logo_03.png"></a>
     </div>
     <div class="brand-thumb">
-      <a class="columns large-4 medium-4 small-12" href="havo.html"><img width="300" height="300" src="images/logo_02.png"></a>
+      <a class="columns large-4 medium-4 small-12" href="sport.html"><img width="300" height="300" src="images/logo_06.png"></a>
     </div>  
   </section>
   <section class="row">
@@ -133,7 +134,7 @@
       <a class="columns large-4 medium-4 small-12" href="havo.html"><img width="300" height="300" src="images/logo_05.png"></a>
     </div>
     <div class="brand-thumb">
-      <a class="columns large-4 medium-4 small-12" href="havo.html"><img width="300" height="300" src="images/logo_06.png"></a>
+      <a class="columns large-4 medium-4 small-12" href="havo.html"><img width="300" height="300" src="images/logo_02.png"></a>
     </div>
   </section>
 </div>
@@ -141,14 +142,14 @@
 <!--*Website goes here-->
 <div id="website">
   <section class="row">
-    <a href="purevolume.html"><img class="columns large-4 small-12" src="images/website_01.png"></a>
-    <a href="#"><img class="columns large-4 small-12" src="images/website_02.png"></a>
-    <a href="#"><img class="columns large-4 small-12" src="images/website_03.png"></a>
+    <a href="roku.html"><img class="columns large-4 medium-4 small-12" src="images/website_03.png"></a>
+    <a href="#"><img class="columns large-4 medium-4 small-12" src="images/website_02.png"></a>
+    <a href="#"><img class="columns large-4 medium-4 small-12" src="images/website_01.png"></a>
   </section>
   <section class="row">
-    <a href="#"><img class="columns large-4 small-12" src="images/website_04.png"></a>
-    <a href="#"><img class="columns large-4 small-12" src="images/website_05.png"></a>
-    <a href="#"><img class="columns large-4 small-12" src="images/website_06.png"></a>
+    <a href="#"><img class="columns large-4 medium-4 small-12" src="images/website_04.png"></a>
+    <a href="#"><img class="columns large-4 medium-4 small-12" src="images/website_05.png"></a>
+    <a href="#"><img class="columns large-4 medium-4 small-12" src="images/website_06.png"></a>
   </section>
 </div>
 
@@ -156,14 +157,35 @@
 
 
 <!--*Photography goes here-->
-<div id="photo">
-  
+<div>
+
 </div>
 
 
 
-
 <!--*Video goes here-->
+<section id="video-project">
+  <div id="videoplay1">
+    <div class="row">
+      <div class="columns small-12 medium-7 large-8 large-offset-2" id="videoPerfume"> 
+        <video ishivideo="true" autoplay="false" isrotate="false" autoHide="true"> <!-- only autoplay with muted property -->
+          <source src="video/perfume.mp4" type="video/mp4" class="pPause">
+          <!-- Video Project -->
+        </video>
+      </div>
+    </div> 
+
+    <div class="row">
+      <div class="columns small-12 medium-7 large-8 large-offset-2"> 
+          <video ishivideo="true" autoplay="false" isrotate="false" autoHide="true"> <!-- only autoplay with muted property -->
+            <source src="video/genki.mp4" type="video/mp4" class="pPause">
+            <!-- Video Project -->
+          </video>
+      </div> 
+    </div>
+  </div>
+</section>
+
     <script src="js/wow.min.js"></script>
     <script>
     new WOW().init();
@@ -174,5 +196,7 @@
 	  <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
+    <script type="text/javascript" src="js/hivideo.js"></script>
+    <script src="js/video.js"></script>
 </body>
 </html>

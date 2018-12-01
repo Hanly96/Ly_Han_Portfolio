@@ -34,7 +34,10 @@ body p{
     src:url(../fonts/Studio-Gothic-Alternate-ExtraLight-trial.ttf)
 }
 
-
+@font-face{
+    font-family:retro;
+    src:url(../fonts/Super\ Retro\ M54.ttf);
+}
 #main-menu{
     position:-webkit-sticky;
     position:sticky;
@@ -124,17 +127,10 @@ body p{
     padding-bottom: 40px;
 }
 
-    /*Branding*/
-#branding{
-    background-color: #f7f2ed;
-    display: none;
-}
-
 #brand-button {
-    padding-top: 5px;
+    padding: 5px;
     font-family: pecita;
     display: block;
-    width: 200px;
     height: 55px;
     color: #000;
     text-decoration: none;
@@ -145,7 +141,7 @@ body p{
     font-size: 25pt;
     text-align: center;
     float: left;
-    margin-right: 65px;
+    /* margin-right: 65px; */
 }
 
 #brand-button:hover{
@@ -154,10 +150,10 @@ body p{
 
 
 #web-button {
-    padding-top: 5px;
+    padding: 5px;
     font-family: pecita;
     display: block;
-    width: 200px;
+    /* width: 200px; */
     height: 55px;
     color: #000;
     text-decoration: none;
@@ -168,7 +164,7 @@ body p{
     font-size: 25pt;
     text-align: center;
     float: left;
-    margin-right: 65px;
+    /* margin-right: 65px; */
 }
 
 #web-button:hover{
@@ -176,10 +172,10 @@ body p{
 }
 
 #photo-button {
-    padding-top: 8px;
+    padding: 5px;
     font-family: pecita;
     display: block;
-    width: 200px;
+    /* width: 200px; */
     height: 55px;
     color: #000;
     text-decoration: none;
@@ -190,7 +186,7 @@ body p{
     font-size: 22pt;
     text-align: center;
     float: left;
-    margin-right: 65px;
+    /* margin-right: 65px; */
 }
 
 #photo-button:hover{
@@ -198,10 +194,10 @@ body p{
 }
 
 #video-button {
-    padding-top: 5px;
+    padding: 5px;
     font-family: pecita;
     display: block;
-    width: 200px;
+    /* width: 200px; */
     height: 55px;
     color: #000;
     text-decoration: none;
@@ -227,10 +223,16 @@ body p{
     filter: alpha(Opacity=100);
 }
 
-    /*Website*/
+  /*Branding*/
+#branding{
+    background-color: #f7f2ed;
+    display: none;
+}
+
+    /*Website Project*/
 #website{
     padding-top: 100px;
-    background-color: #f6ebd9;
+    background-color: #f7f2ed;
     display: none;
 }
 
@@ -238,12 +240,22 @@ body p{
     margin-bottom: 30px;
 }
 
-    /* Photo */
+    /* Photo Project */
 #photo{
-    background-color: #f6e2c0;
+    background-color: #f7f2ed;
+    display: none;
 }
 
+   /* Video Project */
+#video-project{
+    background-color: #f7f2ed;
+    display: none;
+    padding-top: 100px;
+}
 
+#videoPerfume{
+    padding-bottom:50px;
+}
 /*Ha Vo Page*/
 
 
@@ -297,3 +309,36 @@ body p{
 .typo-genki-name{
     font-weight: bold;
 }
+
+#videoGenki {
+    padding-top: 50px;
+}
+
+/* Sport Page */
+
+.heading-sport p{
+    font-family: retro;
+    font-size: 20pt;
+    text-align: left;
+}
+
+.heading-sport {
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+#text-typo-sport p{
+    font-family: retro;
+    font-size: 40pt;
+}
+
+/* Roku Website */
+#text-roku p{
+    text-align: justify;
+}
+
+#roku-desktop{
+    margin-top: 50px;
+    margin-bottom: 10%;
+}
+

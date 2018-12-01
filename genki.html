@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/foundation.css">
 <link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/hivideo.css" rel="stylesheet" type="text/css">
+<link href="css/lightbox.min.css" rel="stylesheet" type="text/css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" type="text/css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
 <title>Han Ly</title>
@@ -33,7 +35,7 @@
 
 <div id="genki-contain">
     <section>
-        <object class="columns large-6 large-offset-3 small-12" type="image/svg+xml" id="heading-havo" data="images/heading-genki.svg"></object>
+        <object class="columns large-6 large-offset-3 medium-8 small-12" type="image/svg+xml" id="heading-havo" data="images/heading-genki.svg"></object>
     </section>
 
     <section class="row" id="brand-genki">
@@ -100,6 +102,21 @@
         </div>
     </section>
 
+    <section id="gallery-genki" class="row">
+        <a href="images/genki_01.jpg" data-lightbox="mygallery"><img class="columns large-3 medium-3 small-12" src="images/genki_small_01.jpg"></a>
+        <a href="images/genki_02.jpg" data-lightbox="mygallery"><img class="columns large-3 medium-3 small-12" src="images/genki_small_02.jpg"></a>
+        <a href="images/genki_03.jpg" data-lightbox="mygallery"><img class="columns large-3 medium-3 small-12" src="images/genki_small_03.jpg"></a>
+        <a href="images/genki_04.jpg" data-lightbox="mygallery"><img class="columns large-3 medium-3 small-12" src="images/genki_small_04.jpg"></a>
+    </section>
+
+    <div id="videoplay1" class="row">
+        <div class="small-12 medium-7 large-8 large-offset-2 columns" id="videoGenki"> 
+          <video ishivideo="true" autoplay="false" isrotate="false" autoHide="true"> <!-- only autoplay with muted property -->
+            <source src="video/genki.mp4" type="video/mp4" class="pPause">
+            <!-- ogg theora -->
+          </video>
+        </div>
+    </div>
 
 </div><!--end of Genki Contain-->
 
@@ -110,8 +127,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
     <script src="js/main.js"></script>
-	  <script src="js/vendor/jquery.js"></script>
+	<script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
+    <script type="text/javascript" src="js/hivideo.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
