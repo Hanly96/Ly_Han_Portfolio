@@ -94,7 +94,7 @@ body p{
 
 /*About*/
 
-#about{
+#headibg-about{
     background-color: #f7f2ed;
     
 }
@@ -256,6 +256,15 @@ body p{
 #videoPerfume{
     padding-bottom:50px;
 }
+
+
+/* Contact Page*/
+
+#contact{
+    background-color: #f7f2ed; 
+}
+
+
 /*Ha Vo Page*/
 
 
