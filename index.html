@@ -55,6 +55,16 @@
       height="65"></object>
   </section>
 
+  <div id="videoplay1" class="row">
+      <div class="small-12 medium-7 large-8 large-offset-2 columns" id="videoGenki"> 
+        <video ishivideo="true" autoplay="false" isrotate="false" autoHide="true"> <!-- only autoplay with muted property -->
+          <source src="video/genki.mp4" type="video/mp4" class="pPause">
+          <!-- ogg theora -->
+        </video>
+      </div>
+  </div>
+
+
   <section id="text-about" class="row">
     <div class="large-10 large-offset-1 small-12">
       <p>A highly creative and motivated individual with extensive experience in multimedia, marketing and print design currently completing th Interactive Media Design program offered through Fanshawe College. Exceptional collaborative and 
@@ -64,23 +74,23 @@
     </div> 
   </section>
 
-  <section id="interests">
-    <div class="row">
-    <div class="columns large-3 large-offset-1 small-12">
-      <object type="image/svg+xml" id="dog" data="images/dog.svg"></object>
-      <p class="headerInte">Dogs</p>
-    </div>
-
-  <div class="columns large-3 large-offset-1 small-12">
-      <object type="image/svg+xml" id="camera" data="images/camera.svg" ></object>
-      <p class="headerInte">Photography</p>
-  </div>
+  <section class="row" id="interests">
+    
+      <div class="columns large-4 medium-4 small-12">
+        <object type="image/svg+xml" id="dog" data="images/dog.svg"></object>
+        <p class="headerInte">Dogs</p>
+      </div>
   
-  <div class="columns large-3 large-offset-1 small-12">
-      <object type="image/svg+xml" data="images/travel.svg" ></object>
-      <p class="headerInte">Travel</p>
-  </div>
-  </div>
+
+      <div class="columns large-4 medium-4 small-12">
+        <object type="image/svg+xml" id="camera" data="images/camera.svg"></object>
+        <p class="headerInte">Photography</p>
+      </div>
+
+      <div class="columns large-4 medium-4 small-12">
+        <object type="image/svg+xml" id="travel" data="images/travel.svg"></object>
+        <p class="headerInte">Travel</p>
+      </div>
   </section><!--end of Interest of About-->
 
 </div><!--end of About-->
@@ -92,8 +102,8 @@
       height="65"></object>
   </section>
 
-<div>
-  <div class="row" id="project-button">
+<div class="row">
+  <div id="project-button">
     <section id="brand-button" class="columns text-center small-12 medium-3 large-3">
             <a href="#branding" onclick="hideShowBranding()">Branding</a>
     </section>
@@ -114,6 +124,13 @@
 <!--*Branding goes here-->
 <div id="branding">
   <section class="row">
+    <div class="columns large-12 medium-12 small-12">
+        <object class="columns large-12 medium-12 small-12" type="image/svg+xml" id="heading-branding" data="images/heading-branding.svg" width="720"
+        height="65"></object>
+    </div>
+  </section><!--end of Heading Branding-->
+
+  <section class="row">
     <div class="brand-thumb">
       <a class="columns large-4 medium-4 small-12" href="havo.html"><img width="300" height="300" src="images/logo_01.png"></a>
     </div>
@@ -123,7 +140,8 @@
     <div class="brand-thumb">
       <a class="columns large-4 medium-4 small-12" href="sport.html"><img width="300" height="300" src="images/logo_06.png"></a>
     </div>  
-  </section>
+  </section><!--end of row of First 3 Logo-->
+
   <section class="row">
     <div class="brand-thumb">
       <a class="columns large-4 medium-4 small-12" href="havo.html"><img width="300" height="300" src="images/logo_04.png"></a>
@@ -134,35 +152,54 @@
     <div class="brand-thumb">
       <a class="columns large-4 medium-4 small-12" href="havo.html"><img width="300" height="300" src="images/logo_02.png"></a>
     </div>
-  </section>
-</div>
+  </section><!--end of row of Next 3 Logo-->
+</div><!--end of Branding Project-->
 
 <!--*Website goes here-->
 <div id="website">
   <section class="row">
+    <div class="columns large-12 medium-12 small-12">
+        <object class="columns large-12 medium-12 small-12" type="image/svg+xml" id="heading-website" data="images/heading-website.svg" width="720"
+        height="65"></object>
+    </div>
+  </section><!--end of Heading Website-->
+
+  <section class="row">
     <a href="roku.html"><img class="columns large-4 medium-4 small-12" src="images/website_03.png"></a>
     <a href="#"><img class="columns large-4 medium-4 small-12" src="images/website_02.png"></a>
     <a href="#"><img class="columns large-4 medium-4 small-12" src="images/website_01.png"></a>
-  </section>
+  </section><!--end of first 3 website logo-->
+
   <section class="row">
     <a href="#"><img class="columns large-4 medium-4 small-12" src="images/website_04.png"></a>
     <a href="#"><img class="columns large-4 medium-4 small-12" src="images/website_05.png"></a>
     <a href="#"><img class="columns large-4 medium-4 small-12" src="images/website_06.png"></a>
-  </section>
-</div>
+  </section><!--end of next 3 website logo-->
+</div><!--end of Website Project-->
 
 
 
 
 <!--*Photography goes here-->
-<div>
+<div id="photo">
+    <section class="row">
+        <div class="columns large-12 medium-12 small-12">
+            <object class="columns large-12 medium-12 small-12" type="image/svg+xml" id="heading-photo" data="images/heading-photo.svg" width="720"
+            height="65"></object>
+        </div>
+      </section><!--end of Heading Photograph-->
 
-</div>
-
-
+</div><!--end of Photography Project-->
 
 <!--*Video goes here-->
-<section id="video-project">
+<div id="video-project">
+  <section class="row">
+    <div class="columns large-12 medium-12 small-12">
+        <object class="columns large-12 medium-12 small-12" type="image/svg+xml" id="heading-video" data="images/heading-video.svg" width="720"
+        height="65"></object>
+    </div>
+  </section><!--end of Heading Photograph-->
+
   <div id="videoplay1">
     <div class="row">
       <div class="columns small-12 medium-7 large-8 large-offset-2" id="videoPerfume"> 
@@ -170,8 +207,8 @@
           <source src="video/perfume.mp4" type="video/mp4" class="pPause">
           <!-- Video Project -->
         </video>
-      </div>
-    </div> 
+      </div><!--end of columns-->
+    </div><!--end of row-->
 
     <div class="row">
       <div class="columns small-12 medium-7 large-8 large-offset-2"> 
@@ -179,10 +216,10 @@
             <source src="video/genki.mp4" type="video/mp4" class="pPause">
             <!-- Video Project -->
           </video>
-      </div> 
-    </div>
-  </div>
-</section>
+      </div><!--end of columns-->
+    </div><!--end of row-->
+  </div><!--end of videoplay1-->
+</div><!--end of Video Project-->
 
     <script src="js/wow.min.js"></script>
     <script>

@@ -8,7 +8,7 @@
 
 body p{
     
-    font-family: Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 15pt;
     text-align: center;
 }
@@ -38,6 +38,12 @@ body p{
     font-family:retro;
     src:url(../fonts/Super\ Retro\ M54.ttf);
 }
+
+@font-face{
+    font-family:rio;
+    src:url(../fonts/BILLY\ ARGEL\ RIO\ GLAMOUR\ PERSONAL\ USE.otf);
+}
+
 #main-menu{
     position:-webkit-sticky;
     position:sticky;
@@ -94,7 +100,7 @@ body p{
 
 /*About*/
 
-#headibg-about{
+#about{
     background-color: #f7f2ed;
     
 }
@@ -104,8 +110,10 @@ body p{
     margin-bottom: 40px;
 }
 
-#textabout p{
+#text-about p{
     text-align: justify;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #interests p{
@@ -236,6 +244,10 @@ body p{
     display: none;
 }
 
+#heading-website{
+    margin-bottom: 40px;
+}
+
 #website img{
     margin-bottom: 30px;
 }
@@ -246,11 +258,19 @@ body p{
     display: none;
 }
 
+#heading-photo{
+    margin-bottom: 40px;
+}
+
    /* Video Project */
 #video-project{
     background-color: #f7f2ed;
     display: none;
     padding-top: 100px;
+}
+
+#heading-video{
+    margin-bottom: 40px;
 }
 
 #videoPerfume{
@@ -261,9 +281,64 @@ body p{
 /* Contact Page*/
 
 #contact{
-    background-color: #f7f2ed; 
+    background-color: #f7f2ed;
+    
 }
 
+#heading-contact{
+    margin-top:40px;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-family: rio;
+    font-size: 20pt;
+    
+}
+
+#nameBox{
+    font-family: Arial;
+    background-color: #f7ce87;
+}
+
+#addressBox{
+    font-family: Arial;
+    background-color: #97cbd6;
+}
+
+#phoneBox{
+    font-family: Arial;
+    background-color: #f6a482;
+}
+
+#emailBox{
+    color: #fff;
+    font-family: Arial;
+    background-color: #77a9c1;
+}
+
+#messBox{
+    font-family: Arial;
+    background-color: #f7ce87;
+}
+
+#buttonContact{
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+    padding: 5px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #000;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+    background-color: #f6a482;
+}
+
+#buttonContact:hover{
+    background-color: #f7c3b0;
+}
 
 /*Ha Vo Page*/
 
