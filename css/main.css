@@ -277,6 +277,19 @@ body p{
     padding-bottom:50px;
 }
 
+/* Footer */
+
+
+#mainFooter{
+    background-size: cover;
+    background: url("../images/footer.jpg") no-repeat center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
 
 /* Contact Page*/
 
