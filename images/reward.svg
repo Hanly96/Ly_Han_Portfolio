@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="reward" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="75px" height="50px" viewBox="0 0 75 50" enable-background="new 0 0 75 50" xml:space="preserve">
+<g>
+	<rect id="bg_x5F_yellow" x="6.817" y="0.313" fill="#F4CD86" width="61.367" height="41.65"/>
+	<g id="text">
+		<rect x="28.891" y="9.044" fill="#5B4203" width="17.22" height="3.311"/>
+		<rect x="24.807" y="14.784" fill="#5B4203" width="25.388" height="3.311"/>
+		<rect x="28.891" y="20.524" fill="#5B4203" width="17.22" height="3.311"/>
+	</g>
+	<polygon fill="#F4A281" points="60.178,35.268 56.266,37.376 52.354,35.268 46.111,46.843 49.861,46.195 51.381,49.688 
+		56.266,40.63 61.15,49.688 62.67,46.195 66.422,46.843 	"/>
+	<circle fill="#F4A281" cx="56.352" cy="33.097" r="7.078"/>
+	<circle fill="#FFFFFF" cx="56.352" cy="33.097" r="3.938"/>
+</g>
+</svg>

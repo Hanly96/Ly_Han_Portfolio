@@ -1,0 +1,34 @@
+{
+  "name": "ly_han_portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hanly96/Ly_Han_Portfolio.git"
+  },
+  "keywords": [
+    "Design",
+    "Portfolio",
+    "Hanly",
+    "Interactive",
+    "Website",
+    "Logo",
+    "Branding"
+  ],
+  "author": "Han Ly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hanly96/Ly_Han_Portfolio/issues"
+  },
+  "homepage": "https://github.com/Hanly96/Ly_Han_Portfolio#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.10.0"
+  }
+}

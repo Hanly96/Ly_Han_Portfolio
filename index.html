@@ -11,34 +11,34 @@
 </head>
 
 <body>
-<!--Navigation goes here-->  
-        <header id="nav">
-
-                <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
-                  <button class="menu-icon columns" type="button" data-toggle="main-menu"></button>
-                  <div class="title-bar-title columns text-center"><label class="columns small-12 centered"></label></div>
-                </div>
-          
-                <nav id="main-menu">  
-                    <h2 class="hidden" style="display:none">Navigation</h2>
-                  <ul id="menu" class="menu vertical medium-horizontal text-center expanded columns small-12 large-7">
-                    <li class="columns small-12"><a href="index.html">Home</a></li>
-                    <li class="columns small-12"><a href="index.html#about">About</a></li>
-                    <li class="columns small-12"><a href="index.html#project">Projects</a></li>
-                    <li class="columns small-12"><a href="contact.html">Contact</a></li>
-                  </ul>  
-                </nav>
-        </header>
+<!--Navigation goes here--> 
+        <header></header>
+        <input type="checkbox" id="openSideMenu" class="openSideMenu">
+        <label for="openSideMenu" class="menuIconToggle">
+          <div class="hamb-line dia p-1"></div>
+          <div class="hamb-line hor"></div>
+          <div class="hamb-line dia p-2"></div>
+        </label>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#project">Projects</a></li>
+            <li><a href="contact.php">Contact</a></li>
+          </ul>
+        </nav>
 
 <!--#Home goes here-->
 <div id="home">      
         <section>
-          <img class="small-12 large-12" width="1024" height="600" src="images/banner.gif">
+          <img id="banner" class="small-12 large-12 medium-12" src="images/banner.gif">
         </section>
-                
-        <section id="click-me">
+        
+        <section id="buttonClickme">
+        <div class="columns large-3 large-offset-5 medium-6 small-8" id="click-me">
           <a href="#about">Click me</a>
-        </section>
+        </div>
+      </section>
                 
         
 </div>
@@ -59,36 +59,84 @@
   </section>
 
   <section class="row">
-    <img class="columns large-8 large-offset-2 medium-12 small-12" src="images/han.jpg">
+    <img id="hanImage" class="columns large-8 large-offset-2 medium-12 small-12" src="images/han.jpg">
   </section>
 
+  <section class="row" id="interests">  
+      <div class="columns large-4 medium-4 small-12">
+        <object type="image/svg+xml" id="dog" data="images/dog.svg" alt="SVG"></object>
+        <p class="headerInte">Dogs</p>
+        <p>Happiness is a warm puppy.</p>
+      </div>
+  
+      <div class="columns large-4 medium-4 small-12">
+        <object type="image/svg+xml" id="camera" data="images/camera.svg" alt="SVG"></object>
+        <p class="headerInte">Photography</p>
+        <p>Photography is the story I fail to put into words.</p>
+      </div>
+
+      <div class="columns large-4 medium-4 small-12">
+        <object type="image/svg+xml" id="travel" data="images/travel.svg" alt="SVG"></object>
+        <p class="headerInte">Travel</p>
+        <p>Happiness is a way of travel – not a destination.</p>
+      </div>
+  </section><!--end of Interest of About-->
+
+  <div>
+      <div id="iconProcess" class="row">
+              <div class="columns large-4 medium-4 small-12" id="highschool">
+                  <object type="image/svg+xml" id="hat" data="images/hat.svg"></object>
+                  <div id="text_process">
+                  <p class="headerProcess">High School Diploma</p>
+                  <p>Sep 2011 - June 2014
+                  <br>Marie Curie High School</p>
+                  </div><!--end of Text High School-->
+                </div><!--end of High School-->
+
+              <div class="columns large-4 medium-4 small-12" id="fpt">
+                <object type="image/svg+xml" id="reward" data="images/reward.svg"></object>
+                <div id="text_process">
+                <p class="headerProcess">Graphic Design Diploma</p>
+                <p>Sep 2014 - July 2016
+                <br>FPT University</p>
+                </div><!--end of Text FPT-->
+              </div><!--end of FPT-->
+
+              <div class="columns large-4 medium-4 small-12" id="fanshawe">
+                <object id="book" data="images/book.svg" type="image/svg+xml"></object>
+                <div id="text_process">
+                <p class="headerProcess">Interactive Media Design</p>
+                <p>Jan 2018
+                <br>Fanshawe College</p>
+                </div><!--end of Text Fanshawe-->
+              </div><!--end of Fanshawe-->
+      
+  
+      <div class="row">
+      <object class="columns large-12 medium-12 small-12" type="image/svg+xml" id="time" data="images/time.svg" alt="SVG"></object>
+      </div>
+              <div class="row">
+              <div class="columns large-4 large-offset-4 medium-4 small-12" id="freelance">
+                <object type="image/svg+xml" id="computer" data="images/computer.svg"></object>
+                <div id="text_process">
+                <p class="headerProcess">Freelance Illustrator</p>
+                <p>May 2017
+                <br>Word Magazine</p>    
+              </div>
+              </div>
+
+       </div>       
+  </div><!--end of Icon Process-->
+
+  </div>
+
   <div id="videoplay1" class="row">
-      <div class="small-12 medium-7 large-8 large-offset-2 columns" id="videoGenki"> 
+      <div class="small-12 medium-12 large-12" id="videoReel"> 
         <video ishivideo="true" autoplay="false" isrotate="false" autoHide="true"> <!-- only autoplay with muted property -->
-          <source src="video/genki.mp4" type="video/mp4" class="pPause">
-          <!-- ogg theora -->
+          <source src="video/Ly_Han_Reel.mp4" type="video/mp4" class="pPause">
         </video>
       </div>
   </div>
-
-  <section class="row" id="interests">
-    
-      <div class="columns large-4 medium-4 small-12">
-        <object type="image/svg+xml" id="dog" data="images/dog.svg"></object>
-        <p class="headerInte">Dogs</p>
-      </div>
-  
-
-      <div class="columns large-4 medium-4 small-12">
-        <object type="image/svg+xml" id="camera" data="images/camera.svg"></object>
-        <p class="headerInte">Photography</p>
-      </div>
-
-      <div class="columns large-4 medium-4 small-12">
-        <object type="image/svg+xml" id="travel" data="images/travel.svg"></object>
-        <p class="headerInte">Travel</p>
-      </div>
-  </section><!--end of Interest of About-->
 
 </div><!--end of About-->
 
@@ -120,7 +168,7 @@
 
 <!--*Branding goes here-->
 <div id="branding">
-  <section class="row">
+  <section class="row wow bounceInUp">
     <div class="columns large-12 medium-12 small-12">
         <object class="columns large-12 medium-12 small-12" type="image/svg+xml" id="heading-branding" data="images/heading-branding.svg" width="720"
         height="65"></object>
@@ -178,7 +226,7 @@
 
 
 <!--*Photography goes here-->
-<div id="photo">
+<div id="photo" class="wow bounceInUp">
     <section class="row">
         <div class="columns large-12 medium-12 small-12">
             <object class="columns large-12 medium-12 small-12" type="image/svg+xml" id="heading-photo" data="images/heading-photo.svg" width="720"
@@ -190,38 +238,27 @@
 
 <!--*Video goes here-->
 <div id="video-project">
-  <section class="row">
-    <div class="columns large-12 medium-12 small-12">
+  <section class="row wow bounceInUp">
+    <div class="columns large-12 medium-12 small-12 ">
         <object class="columns large-12 medium-12 small-12" type="image/svg+xml" id="heading-video" data="images/heading-video.svg" width="720"
         height="65"></object>
     </div>
   </section><!--end of Heading Photograph-->
 
-  <div id="videoplay1">
-    <div class="row">
+  <div id="videoplay1" class="row">
       <div class="columns small-12 medium-7 large-8 large-offset-2" id="videoPerfume"> 
         <video ishivideo="true" autoplay="false" isrotate="false" autoHide="true"> <!-- only autoplay with muted property -->
           <source src="video/perfume.mp4" type="video/mp4" class="pPause">
           <!-- Video Project -->
         </video>
       </div><!--end of columns-->
-    </div><!--end of row-->
-
-    <div class="row">
-      <div class="columns small-12 medium-7 large-8 large-offset-2"> 
-          <video ishivideo="true" autoplay="false" isrotate="false" autoHide="true"> <!-- only autoplay with muted property -->
-            <source src="video/genki.mp4" type="video/mp4" class="pPause">
-            <!-- Video Project -->
-          </video>
-      </div><!--end of columns-->
-    </div><!--end of row-->
   </div><!--end of videoplay1-->
 </div><!--end of Video Project-->
 
 
-<footer id="mainFooter">
-  <div>
-    <div class="row">
+<section id="mainFooter">
+
+    <!-- <div class="row">
       <img class="columns large-8 large-offset-2 medium-12 small-12" id="logo-footer" src="images/logo_hanly.png">
     </div>
 
@@ -229,10 +266,10 @@
       <a href="https://www.facebook.com/han.ly.3958"><img class="columns large-2 large-offset-2 medium-4 small-4" src="images/fb.png"></a>
       <a href="https://www.facebook.com/han.ly.3958"><img class="columns large-2 large-offset-1 medium-4 small-4" src="images/ig.png"></a>
       <a href="https://www.facebook.com/han.ly.3958"><img class="columns large-2 large-offset-1 medium-4 small-4" src="images/pin.png"></a>
-    </div>
-
-</div>
-</footer><!--end of Footer-->
+    </div> -->
+    
+        <img class="large-12 medium-12 small-12" src="images/footer.jpg">
+  </section>    
 
     <script src="js/wow.min.js"></script>
     <script>

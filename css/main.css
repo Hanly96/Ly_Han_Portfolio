@@ -44,33 +44,129 @@ body p{
     src:url(../fonts/BILLY\ ARGEL\ RIO\ GLAMOUR\ PERSONAL\ USE.otf);
 }
 
-#main-menu{
-    position:-webkit-sticky;
-    position:sticky;
-    font-family: pecita;
-    font-size: 20pt;
-    margin-top: 40px;
-}
-#menu li a{
-    transition:0.8s ease-in-out;
-    color:#3d3d3b;
-    font-weight:bold;
-}
-#menu li a:hover{
-    color: #666666;
-    transition:0.8s ease-in-out;
+/* Navigation */
+
+  header {
+    margin: 0;
+    width: 100%;
+    background-color: #c4e0f0;
+    position: fixed;
+    height: 60px!important;
+    z-index: 20;
+  }
+  nav {
+      height: 100%;
+      position: fixed;
+      left: 0;
+      width: 280px;
+      margin-top: 60px;
+      transform: translateX(-280px);
+      transition: transform 250ms ease-in-out;
+      background-color:#97cad6;
+  }
+  nav ul {
+      margin:0;
+      padding:0;
+      border-top: 1px solid rgba(255, 255, 255, 0.10);
+  }
+  nav ul>li {
+      list-style: none;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 20px;
+      cursor: pointer;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+       transition: .25s;
+  }
+  nav ul>li span {
+      display: block;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.50);
+  }
+  nav ul>li a {
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+  }
+  nav ul>li:hover {
+    background-color: #f4cd87;
+  }
+  input[type="checkbox"]:checked ~ nav {
+      transform: translateX(0);
+  }
+  input[type=checkbox] {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      display: none;
+  }
+  .menuIconToggle {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      cursor: pointer;
+      position: fixed;
+      z-index: 99;
+      height: 100%;
+      width: 100%;
+      top: 22px;
+      left: 15px;
+      height: 22px;
+      width: 22px;
+  }
+  .hamb-line {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background-color: #fff;
+  }
+  .hor {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      position: relative;
+      float: left;
+      margin-top: 3px;
+  }
+  .dia.p-1 {
+      position: relative;
+      transition: all 0.3s;
+      box-sizing: border-box;
+      float: left;
+  }
+  .dia.p-2 {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      position: relative;
+      float: left;
+      margin-top: 3px;
+  }
+  input[type=checkbox]:checked ~ .menuIconToggle > .hor {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      opacity: 0;
+  }
+  input[type=checkbox]:checked ~ .menuIconToggle > .dia.p-1 {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      transform: rotate(135deg);
+      margin-top: 8px;
+  }
+  input[type=checkbox]:checked ~ .menuIconToggle > .dia.p-2 {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      transform: rotate(-135deg);
+      margin-top: -9px;
+  }
+
+#banner{
+    margin-top:50px;
 }
 
-#text_banner{
-    position: absolute;
-    top: 50%;
-    left: 10%;    
-}
-
-#text_banner p{
-    font-family: heading;
-    font-size: 25pt;
-    padding-top:10px;
+#buttonClickme{
+    background-color: #f7f2ed;
 }
 
 #click-me {
@@ -85,12 +181,8 @@ body p{
     transition: all .5s ease-in-out;
     border-radius: 20px;
     background-color: #bec9ae;
-    float: right;
     font-size: 15pt;
     text-align: center;
-    position: absolute;
-    top: 80%;
-    left: 45%;
 }  
 
 #click-me:hover{
@@ -116,10 +208,112 @@ body p{
     margin-bottom: 50px;
 }
 
-#interests p{
-    text-align: center;
+
+
+#videoReel{
+    margin-top: 30%;
 }
 
+#dog{
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    height: auto;
+}
+
+#camera{
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    height: auto;
+}
+
+
+#travel{
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    height: auto;
+}
+
+#interests{
+    margin-top:10%;
+}
+
+#iconProcess{
+    margin-top: 20%;
+}
+
+#process{
+    margin-top: 50px;
+}
+
+.headerProcess {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #5b4203;
+    float: right;
+}
+
+.text_process{
+    float: right;
+}
+
+#iconProcess p{
+    font-size: 11pt;
+}
+
+#time{
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    height: auto;
+}
+
+#hat{
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    width:30%;
+    height: auto;
+    float: left;
+}
+
+#reward{
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    width:30%;
+    height: auto;
+    float: left;
+}
+
+#book{
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    width:30%;
+    height: auto;
+    float: left;
+}
+
+#computer{
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    width:30%;
+    height: auto;
+    float: left;
+}
+
+#freelance{
+    margin-top:30px;
+}
 /*Project*/
 #project{
     background-color: #f7f2ed;
@@ -237,6 +431,10 @@ body p{
     display: none;
 }
 
+#heading-branding{
+    margin-top: 40px;
+}
+
     /*Website Project*/
 #website{
     padding-top: 100px;
@@ -249,7 +447,7 @@ body p{
 }
 
 #website img{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
     /* Photo Project */
@@ -280,16 +478,6 @@ body p{
 /* Footer */
 
 
-#mainFooter{
-    background-size: cover;
-    background: url("../images/footer.jpg") no-repeat center;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
 
 /* Contact Page*/
 
@@ -307,6 +495,11 @@ body p{
     font-family: rio;
     font-size: 20pt;
     
+}
+
+textarea {
+    height: 100px;
+    border-radius:0.2em;
 }
 
 #nameBox{
