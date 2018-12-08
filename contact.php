@@ -35,25 +35,21 @@ $fields = array(
 
 <body>
     <!--Navigation goes here-->  
-    <div>
-    <header id="nav">
-    
-                    <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
-                      <button class="menu-icon columns" type="button" data-toggle="main-menu"></button>
-                      <div class="title-bar-title columns text-center"><label class="columns small-12 centered"></label></div>
-                    </div>
-              
-                    <nav id="main-menu">  
-                        <h2 class="hidden" style="display:none">Navigation</h2>
-                      <ul id="menu" class="menu vertical medium-horizontal text-center expanded columns small-12 large-7">
-                        <li class="columns small-12"><a href="index.html">Home</a></li>
-                        <li class="columns small-12"><a href="index.html#about">About</a></li>
-                        <li class="columns small-12"><a href="index.html#project">Projects</a></li>
-                        <li class="columns small-12"><a href="contact.php">Contact</a></li>
-                      </ul>  
-                    </nav>
-            </header>
-    </div>   
+    <header></header>
+        <input type="checkbox" id="openSideMenu" class="openSideMenu">
+        <label for="openSideMenu" class="menuIconToggle">
+          <div class="hamb-line dia p-1"></div>
+          <div class="hamb-line hor"></div>
+          <div class="hamb-line dia p-2"></div>
+        </label>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#project">Projects</a></li>
+            <li><a href="contact.php">Contact</a></li>
+          </ul>
+        </nav>   
     
     <div>
             <section>
@@ -86,7 +82,7 @@ $fields = array(
         </form> 
           </div>  
     </div>
-    </div><!--end of Contact-->    
+    </div><!--end of Contact-->      
 
     <footer id="mainFooter">     
         <img class="large-12 medium-12 small-12" src="images/footer.jpg">

@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/foundation.css">
 <link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/lightbox.min.css" rel="stylesheet" type="text/css">
 <link href="css/hivideo.css" rel="stylesheet" type="text/css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" type="text/css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
@@ -34,13 +35,11 @@
           <img id="banner" class="small-12 large-12 medium-12" src="images/banner.gif">
         </section>
         
-        <section id="buttonClickme">
-        <div class="columns large-3 large-offset-5 medium-6 small-8" id="click-me">
-          <a href="#about">Click me</a>
+        <section>
+        <div id="buttonClickme">
+          <a class="columns large-8 large-offset-5 medium-6" href="#about" id="click-me">Click me</a>
         </div>
       </section>
-                
-        
 </div>
 
 <!--#About goes here-->
@@ -64,19 +63,19 @@
 
   <section class="row" id="interests">  
       <div class="columns large-4 medium-4 small-12">
-        <object type="image/svg+xml" id="dog" data="images/dog.svg" alt="SVG"></object>
+        <object type="image/svg+xml" id="dog" data="images/dog.svg"></object>
         <p class="headerInte">Dogs</p>
         <p>Happiness is a warm puppy.</p>
       </div>
   
       <div class="columns large-4 medium-4 small-12">
-        <object type="image/svg+xml" id="camera" data="images/camera.svg" alt="SVG"></object>
+        <object type="image/svg+xml" id="camera" data="images/camera.svg"></object>
         <p class="headerInte">Photography</p>
         <p>Photography is the story I fail to put into words.</p>
       </div>
 
       <div class="columns large-4 medium-4 small-12">
-        <object type="image/svg+xml" id="travel" data="images/travel.svg" alt="SVG"></object>
+        <object type="image/svg+xml" id="travel" data="images/travel.svg"></object>
         <p class="headerInte">Travel</p>
         <p>Happiness is a way of travel – not a destination.</p>
       </div>
@@ -84,44 +83,42 @@
 
   <div>
       <div id="iconProcess" class="row">
-              <div class="columns large-4 medium-4 small-12" id="highschool">
+              <div class="columns large-4 medium-4 small-4" id="highschool">
                   <object type="image/svg+xml" id="hat" data="images/hat.svg"></object>
-                  <div id="text_process">
                   <p class="headerProcess">High School Diploma</p>
-                  <p>Sep 2011 - June 2014
-                  <br>Marie Curie High School</p>
-                  </div><!--end of Text High School-->
+                  <!-- <p>Sep 2011 - June 2014 -->
+                 <!-- <p>Marie Curie</p>  -->
                 </div><!--end of High School-->
 
-              <div class="columns large-4 medium-4 small-12" id="fpt">
+              <div class="columns large-4 medium-4 small-4" id="fpt">
                 <object type="image/svg+xml" id="reward" data="images/reward.svg"></object>
                 <div id="text_process">
                 <p class="headerProcess">Graphic Design Diploma</p>
-                <p>Sep 2014 - July 2016
-                <br>FPT University</p>
+                <!-- <p>Sep 2014 - July 2016 -->
+                <!-- <br>FPT University</p> -->
                 </div><!--end of Text FPT-->
               </div><!--end of FPT-->
 
-              <div class="columns large-4 medium-4 small-12" id="fanshawe">
+              <div class="columns large-4 medium-4 small-4" id="fanshawe">
                 <object id="book" data="images/book.svg" type="image/svg+xml"></object>
                 <div id="text_process">
                 <p class="headerProcess">Interactive Media Design</p>
-                <p>Jan 2018
-                <br>Fanshawe College</p>
+                <!-- <p>Jan 2018 -->
+                <!-- <br>Fanshawe College</p> -->
                 </div><!--end of Text Fanshawe-->
               </div><!--end of Fanshawe-->
       
   
       <div class="row">
-      <object class="columns large-12 medium-12 small-12" type="image/svg+xml" id="time" data="images/time.svg" alt="SVG"></object>
+      <object class="columns large-12 medium-12 small-12" type="image/svg+xml" id="time" data="images/time.svg"></object>
       </div>
               <div class="row">
-              <div class="columns large-4 large-offset-4 medium-4 small-12" id="freelance">
+              <div class="columns large-4 large-offset-6 medium-4 medium-offset-6 small-4 small-offset-6" id="freelance">
                 <object type="image/svg+xml" id="computer" data="images/computer.svg"></object>
                 <div id="text_process">
                 <p class="headerProcess">Freelance Illustrator</p>
-                <p>May 2017
-                <br>Word Magazine</p>    
+                <!-- <p>May 2017
+                <br>Word Magazine</p>-->
               </div>
               </div>
 
@@ -234,6 +231,19 @@
         </div>
       </section><!--end of Heading Photograph-->
 
+    <section id="gallery-photography" class="row">
+        <a href="images/photo_01.jpg" data-lightbox="mygallery"><img class="columns large-4 medium-4 small-12" src="images/photo_small_01.jpg"></a>
+        <a href="images/photo_02.jpg" data-lightbox="mygallery"><img class="columns large-4 medium-4 small-12" src="images/photo_small_02.jpg"></a>
+        <a href="images/photo_03.jpg" data-lightbox="mygallery"><img class="columns large-4 medium-4 small-12" src="images/photo_small_03.jpg"></a>
+    </section><!--end of Gallery Sport-->
+
+    <section id="gallery-photography" class="row">
+      <a href="images/photo_04.jpg" data-lightbox="mygallery"><img class="columns large-4 medium-4 small-12" src="images/photo_small_04.jpg"></a>
+      <a href="images/photo_05.jpg" data-lightbox="mygallery"><img class="columns large-4 medium-4 small-12" src="images/photo_small_05.jpg"></a>
+      <a href="images/photo_06.jpg" data-lightbox="mygallery"><img class="columns large-4 medium-4 small-12" src="images/photo_small_06.jpg"></a>
+  </section><!--end of Gallery Sport-->
+
+
 </div><!--end of Photography Project-->
 
 <!--*Video goes here-->
@@ -284,5 +294,6 @@
     <script src="js/vendor/foundation.js"></script>
     <script type="text/javascript" src="js/hivideo.js"></script>
     <script src="js/video.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>

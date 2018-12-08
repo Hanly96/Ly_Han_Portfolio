@@ -256,11 +256,6 @@ body p{
     font-size: 12pt;
     font-weight: bold;
     color: #5b4203;
-    float: right;
-}
-
-.text_process{
-    float: right;
 }
 
 #iconProcess p{
@@ -273,6 +268,8 @@ body p{
     margin-right: auto;
     width:100%;
     height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #hat{
@@ -314,6 +311,13 @@ body p{
 #freelance{
     margin-top:30px;
 }
+
+@media (max-width: 600px) {
+    #time{
+        display: hidden;
+    }
+}    
+
 /*Project*/
 #project{
     background-color: #f7f2ed;
@@ -456,8 +460,13 @@ body p{
     display: none;
 }
 
+#gallery-photography{
+    padding-bottom: 30px;
+}
+
 #heading-photo{
     margin-bottom: 40px;
+    margin-top: 40px;
 }
 
    /* Video Project */
@@ -577,6 +586,7 @@ textarea {
 
 /* Genki Page */
 
+
 #text-brand-genki p{
     text-align: justify;
 }
@@ -632,3 +642,6 @@ textarea {
     margin-bottom: 10%;
 }
 
+#heading-roku{
+    padding-top: 15%;
+}
