@@ -1,42 +1,24 @@
-
-var branding = document.getElementById("branding");
-    website  = document.getElementById("website");
-    photo    = document.getElementById("photo");
-    videoProject    = document.getElementById("video-project");
+(()=> {
 
 
+    const vm = new Vue({
+        el: '#app',
 
-
-
-function hideShowBranding (){
-    if (branding.style.display === "none") {
-        branding.style.display =   "block";
-    } else {
-        branding.style.display = "none";
-    }
-
-};
-
-function hideShowWebsite (){
-    if (website.style.display === "none") {
-        website.style.display = "block";
-    } else {
-        website.style.display = "none";
-    }
-};
-
-function hideShowPhoto (){
-    if (photo.style.display === "none") {
-        photo.style.display =   "block";
-    } else {
-        photo.style.display = "none";
-    }
-};
-
-function hideShowVideo (){
-    if (videoProject.style.display === "none") {
-        videoProject.style.display =   "block";
-    } else {
-        videoProject.style.display = "none";
-    }
-};
+        data: {
+        
+            aboutText : "A highly creative and motivated individual with extensive experience in multimedia, marketing and print design currently completing th Interactive Media Design program offered through Fanshawe College.",
+            dogTitle : "Dogs",
+            photoTitle : "Photo",
+            travelTitle : "Travel",
+            designSkills: "Photoshop, Ilustrator, Indesign, Cinema 4D, After Effects",
+            workTitle : "PORTFOLIO",
+            aboutdata : [],
+            workdata : [],
+            workhead: "",
+            workdesc: "",
+            worklink: "",
+            productlink: ""
+        }
+    
+});
+})();

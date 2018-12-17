@@ -75,7 +75,7 @@ $fields = array(
                 <textarea id="<?php echo $field_name;?>" placeholder="<?php echo $field_name;?>" name="<?php echo $field_name;?>"></textarea><br>
             <?php else:?>
                 <label class="title" for="<?php echo $field_name;?>"><?php echo $field_config['label'];?></label>
-                <input id="<?php echo $field_name;?>" placeholder="<?php echo $field_name;?>" type="<?php echo $field_config['type'];?>" name="<?php echo $field_name;?>"><br>
+                <input  id="<?php echo $field_name;?>" placeholder="<?php echo $field_name;?>" type="<?php echo $field_config['type'];?>" name="<?php echo $field_name;?>"><br>
             <?php endif;?>
         <?php endforeach;?>
             <input type="submit" value="send" id="buttonContact">

@@ -8,6 +8,7 @@
 <link href="css/hivideo.css" rel="stylesheet" type="text/css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" type="text/css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
 <title>Han Ly</title>
 </head>
 
@@ -51,9 +52,7 @@
 
   <section id="text-about" class="row">
     <div class="large-10 large-offset-1 small-12">
-      <p>A highly creative and motivated individual with extensive experience in multimedia, marketing and print design currently completing th Interactive Media Design program offered through Fanshawe College. Exceptional collaborative and 
-      interpersonal skills;  a energetic team player
-      <br>with advanced wirtten and verbal communitcate skills.</p>   
+      <p>{{ aboutText }}</p>   
     </div> 
   </section>
 
@@ -61,22 +60,22 @@
     <img id="hanImage" class="columns large-8 large-offset-2 medium-12 small-12" src="images/han.jpg">
   </section>
 
-  <section class="row" id="interests">  
+  <section class="row" id="interests" v-for="about in aboutdata">  
       <div class="columns large-4 medium-4 small-12">
         <object type="image/svg+xml" id="dog" data="images/dog.svg"></object>
-        <p class="headerInte">Dogs</p>
+        <p class="headerInte">{{ dogTitle }}</p>
         <p>Happiness is a warm puppy.</p>
       </div>
   
       <div class="columns large-4 medium-4 small-12">
         <object type="image/svg+xml" id="camera" data="images/camera.svg"></object>
-        <p class="headerInte">Photography</p>
+        <p class="headerInte">{{ photoTitle }}</p>
         <p>Photography is the story I fail to put into words.</p>
       </div>
 
       <div class="columns large-4 medium-4 small-12">
         <object type="image/svg+xml" id="travel" data="images/travel.svg"></object>
-        <p class="headerInte">Travel</p>
+        <p class="headerInte">{{ travelTitle }}</p>
         <p>Happiness is a way of travel – not a destination.</p>
       </div>
   </section><!--end of Interest of About-->
@@ -288,6 +287,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/project.js"></script>
     <script src="js/about.js"></script>
 	  <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
