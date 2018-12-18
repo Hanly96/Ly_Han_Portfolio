@@ -10,8 +10,6 @@
             dogTitle : "Dogs",
             photoTitle : "Photo",
             travelTitle : "Travel",
-            designSkills: "Photoshop, Ilustrator, Indesign, Cinema 4D, After Effects",
-            workTitle : "PORTFOLIO",
             aboutdata : [],
             workdata : [],
             workhead: "",
