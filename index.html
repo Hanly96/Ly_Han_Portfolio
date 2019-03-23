@@ -53,7 +53,11 @@
 
   <section id="text-about" class="row">
     <div class="large-10 large-offset-1 small-12">
-      <p>{{ aboutText }}</p>   
+      <p>A highly creative and motivated individual with extensive experience in multimedia, marketing and print design currently 
+        completing th Interactive Media Design program offered through Fanshawe College. Exceptional collaborative and 
+        interpersonal skills; a energetic team player with advanced 
+        wirtten and verbal communitcate skills.  
+        </p>   
     </div> 
   </section>
 
@@ -61,41 +65,50 @@
     <img id="hanImage" class="columns large-8 large-offset-2 medium-12 small-12" src="images/han.jpg">
   </section>
 
-  <section class="row" id="interests" v-for="about in aboutdata">  
+  <section class="row" id="interests" v-for="about in aboutdata"> 
+      <section class=" wow bounceInUp">
+          <object class="columns large-12 small-12" type="image/svg+xml" id="heading-interest" data="images/heading-interests.svg" width="480"
+          height="43"></object>
+      </section>
+
       <div class="columns large-4 medium-4 small-12">
         <object type="image/svg+xml" id="dog" data="images/dog.svg"></object>
-        <p class="headerInte">{{ dogTitle }}</p>
+        <p class="headerInte">Dog</p>
         <p>Happiness is a warm puppy.</p>
       </div>
   
       <div class="columns large-4 medium-4 small-12">
         <object type="image/svg+xml" id="camera" data="images/camera.svg"></object>
-        <p class="headerInte">{{ photoTitle }}</p>
+        <p class="headerInte">Photograph</p>
         <p>Photography is the story I fail to put into words.</p>
       </div>
 
       <div class="columns large-4 medium-4 small-12">
         <object type="image/svg+xml" id="travel" data="images/travel.svg"></object>
-        <p class="headerInte">{{ travelTitle }}</p>
+        <p class="headerInte">Travel</p>
         <p>Happiness is a way of travel – not a destination.</p>
       </div>
   </section><!--end of Interest of About-->
 
-  <div>
       <div id="iconProcess" class="row">
+              <section class=" wow bounceInUp">
+                  <object class="columns large-12 small-12" type="image/svg+xml" id="heading-edu" data="images/heading-edu.svg" width="480"
+                  height="43"></object>
+              </section>
+
               <div class="columns large-4 medium-4 small-4" id="highschool">
                   <object type="image/svg+xml" id="hat" data="images/hat.svg"></object>
                   <p class="headerProcess">High School Diploma</p>
                   <!-- <p>Sep 2011 - June 2014 -->
-                 <!-- <p>Marie Curie</p>  -->
+                 <p class="school">Marie Curie High School, Vietnam</p>
                 </div><!--end of High School-->
 
               <div class="columns large-4 medium-4 small-4" id="fpt">
                 <object type="image/svg+xml" id="reward" data="images/reward.svg"></object>
                 <div id="text_process">
-                <p class="headerProcess">Graphic Design Diploma</p>
+                <p class="headerProcess">Graphic Design</p>
                 <!-- <p>Sep 2014 - July 2016 -->
-                <!-- <br>FPT University</p> -->
+                 <p class="school">FPT University, Vietnam</p>
                 </div><!--end of Text FPT-->
               </div><!--end of FPT-->
 
@@ -104,7 +117,7 @@
                 <div id="text_process">
                 <p class="headerProcess">Interactive Media Design</p>
                 <!-- <p>Jan 2018 -->
-                <!-- <br>Fanshawe College</p> -->
+                <p class="school">Fanshawe College, Canada</p>
                 </div><!--end of Text Fanshawe-->
               </div><!--end of Fanshawe-->
       
@@ -124,16 +137,9 @@
 
        </div>       
   </div><!--end of Icon Process-->
+  
 
-  </div>
 
-  <div id="videoplay1" class="row">
-      <div class="small-12 medium-12 large-12" id="videoReel"> 
-        <video ishivideo="true" autoplay="false" isrotate="false" autoHide="true"> <!-- only autoplay with muted property -->
-          <source src="video/Ly_Han_Reel.mp4" type="video/mp4" class="pPause">
-        </video>
-      </div>
-  </div>
 
 </div><!--end of About-->
 

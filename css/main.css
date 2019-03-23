@@ -8,11 +8,15 @@
 
 body p{
     
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: body;
     font-size: 15pt;
     text-align: center;
 }
 
+@font-face{
+    font-family:body;
+    src:url(../fonts/GeosansLight.ttf);
+}
 
 @font-face{
     font-family:heading;
@@ -206,8 +210,12 @@ body p{
     text-align: justify;
     margin-top: 50px;
     margin-bottom: 50px;
+    font-size: 15pt;
 }
 
+#heading-interest{
+    margin-bottom:70px;
+}
 
 
 #videoReel{
@@ -243,6 +251,11 @@ body p{
     margin-top:10%;
 }
 
+#heading-edu{
+    margin-bottom: 70px;
+    
+}
+
 #iconProcess{
     margin-top: 20%;
 }
@@ -255,6 +268,11 @@ body p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12pt;
     font-weight: bold;
+    color: #5b4203;
+}
+
+.school p{
+    font-size: 10pt;
     color: #5b4203;
 }
 
@@ -557,7 +575,9 @@ textarea {
 
 /*Ha Vo Page*/
 
-
+#havo-contain{
+    background-color: #f7f2ed;
+}
 #heading-havo 
 {
     margin-top: 40px;
@@ -585,7 +605,9 @@ textarea {
 }
 
 /* Genki Page */
-
+#genki-contain{
+    background-color: #f7f2ed;
+}
 
 #text-brand-genki p{
     text-align: justify;
@@ -615,6 +637,9 @@ textarea {
 }
 
 /* Sport Page */
+#sport-contain{
+    background-color: #f7f2ed;
+}
 
 .heading-sport p{
     font-family: retro;
@@ -633,6 +658,10 @@ textarea {
 }
 
 /* Roku Website */
+#roku-contain{
+    background-color: #f7f2ed;
+}
+
 #text-roku p{
     text-align: justify;
 }

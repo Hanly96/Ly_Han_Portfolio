@@ -1,24 +1,23 @@
 <?php
 // var_dump($_POST);
 $fields = array(
-    'Name'=>array(
-        'type'=>'text',
-        'label'=>'Name'
-    ),
-    'Email'=>array(
-       'type'=>'email',
-       'label'=>'Email'
-    ),
-    'Phone'=>array(
-       'type'=>'phone',
-       'label'=>'Phone'
-    ),
-    'Message'=>array(
-       'type'=>'textarea',
-       'label'=>'Message'
-    )
-);
-
+	'name'=>array(
+		'type'=>'text',
+		'label'=>'Name'
+		),
+	'email'=>array(
+		'type'=>'email',
+		'label'=>'Email'
+		),
+	'subject'=>array(
+		'type'=>'text',
+		'label'=>'Subject'
+		),
+	'message'=>array(
+		'type'=>'textarea',
+		'label'=>'Message'
+		),
+	);
 ?>
 
 <!doctype html>
@@ -67,19 +66,21 @@ $fields = array(
 
       <div class="row"> 
           <div class="columns large-12 medium-12 small-12"> 
-        <form id="contactForm" action="/includes/sendEmail.php" method="POST">
+
+          <form action="./includes/sendEmail.php" method="POST">
             <h2 class="hidden">User Form</h2>
-        <?php foreach($fields as $field_name => $field_config):?>
+            <?php foreach($fields as $field_name => $field_config):?>
             <?php if($field_config['type'] === 'textarea'):?>
-                <label class="title" for="<?php echo $field_name;?>"><?php echo $field_config['label'];?></label>
+                <label for="<?php echo $field_name;?>"><?php echo $field_config['label'];?></label>
                 <textarea id="<?php echo $field_name;?>" placeholder="<?php echo $field_name;?>" name="<?php echo $field_name;?>"></textarea><br>
             <?php else:?>
-                <label class="title" for="<?php echo $field_name;?>"><?php echo $field_config['label'];?></label>
-                <input  id="<?php echo $field_name;?>" placeholder="<?php echo $field_name;?>" type="<?php echo $field_config['type'];?>" name="<?php echo $field_name;?>"><br>
+                <label for="<?php echo $field_name;?>"><?php echo $field_config['label'];?></label>
+                <input id="<?php echo $field_name;?>" placeholder="<?php echo $field_name;?>" type="<?php echo $field_config['type'];?>" name="<?php echo $field_name;?>"><br>
             <?php endif;?>
         <?php endforeach;?>
             <input type="submit" value="send" id="buttonContact">
-        </form> 
+        </form>  
+        
           </div>  
     </div>
     </div><!--end of Contact-->      
